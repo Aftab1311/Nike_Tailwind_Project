@@ -4,8 +4,9 @@ import { shoes, statistics } from "../constants";
 
 import { bigShoe1 } from "../assets/images";
 import { arrowRight } from "../assets/icons";
-import Button from "../Components/Button";
-import ShoeCard from "../Components/ShoeCard";
+
+import { ShoeCard } from "../components";
+import { Button } from "../components";
 
 const Hero = () => {
   const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
@@ -13,7 +14,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container pl-20"
+      className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container  xl:pl-20"
     >
       <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full  max-xl:padding-x pt-28">
         <p className="text-xl font-montserrat text-coral-red">
@@ -28,7 +29,7 @@ const Hero = () => {
           <span className="text-coral-red inline-block mt-3">Nike</span> Shoes
         </h1>
         <p className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm">
-          Discover stylish Nike arrivals, quality comfort, and innovation for 
+          Discover stylish Nike arrivals, quality comfort, and innovation for
           your active life.
         </p>
 
